@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import  './assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import store from './redux/store/store';
+import {Provider} from 'react-redux'
 
 
 
@@ -10,10 +12,17 @@ import 'bootstrap'
 import App from './App';
 
 
+
 createRoot(document.getElementById('root')).render(
+  
   <StrictMode>
-    <App/>
+
+    <Provider store={store}>
+      <App/>
+    </Provider>
+    
   </StrictMode>
+  
 )
 
 // If you want to start measuring performance in your app, pass a function
