@@ -14,9 +14,13 @@ reducers:{
     decrement:(state)=>{
         state.value=state.value-1;
     },
+    setCustom:(state,action)=>{
+       
+        state.value=action.payload;
+    },
 }
 
 })
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement,setCustom } = counterSlice.actions;
 export default counterSlice.reducer; 
