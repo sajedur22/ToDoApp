@@ -8,7 +8,8 @@ const Counter = () => {
   const dispatch = useDispatch();
   const myNumber=useRef()
    const handleSetCustom = () => {
-    dispatch(setCustom(myNumber.current.value));
+    dispatch(setCustom(Number(myNumber.current.value)));
+
     myNumber.current.value = ''; // <-- input field clear হচ্ছে এখানে
   };
 
