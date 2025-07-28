@@ -1,10 +1,13 @@
 import React from 'react';
-import CounetrPage from './pages/CounetrPage';
+import CountrPage from './pages/CountrPage';
+import ToDoPage from './pages/ToDoPage';
 
 const App = () => {
   return (
     <div>
-     <CounetrPage/>
+      <ToDoPage/><br/>
+     
+     
     </div>
   );
 };

@@ -59,8 +59,8 @@ a{
     text-decoration: none;
 }
 
-body {
-    background: var(--lightDeepColor-2);
+.body {
+    background: var(--lightDeepColor-4);
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -110,13 +110,27 @@ body {
 }
 
 
+.btn-custom-navy {
+  border-color: #001f3f !important;
+  color: #001f3f !important;
+}
+
+
+.btn-custom-navy:hover {
+  background-color: #001f3f !important;
+  color: white !important;
+  border-color: #001f3f !important;
+}
+
+
 .bg-success{
     background: var(--themeColor) !important;
 }
-.btn-success{
-    border-color: var(--themeColor)!important;
-    background-color: var(--themeColor);
+.btn-Success {
+    border-color: #001f3f !important;
+    color: #001f3f;
 }
+
 .btn-outline-success{
     border-color: var(--themeColor)!important;
 }
