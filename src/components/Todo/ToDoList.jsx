@@ -53,6 +53,8 @@ const ToDoList = () => {
       </tr>
     ) : (
       filteredTodos.map((item, i) => (
+
+        
         <tr key={i.toString()}>
           <td>{i + 1}</td>
           <td className={item.completed ? "text-decoration-line-through text-muted" : ""}>

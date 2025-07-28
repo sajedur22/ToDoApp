@@ -8,17 +8,16 @@ const ToDoPage = () => {
         <div className='container mt-5'>
             <div className='row'>
                 <div className='col-12'>
-                    <div className='card shadow-lg '>
+                    <div className='card'>
                         <div className='card-header'>
                             <h4>My Todo</h4>
                         </div>
                         <div className='card-body'>
                              <CreateToDo/>
-                             
-                             <ToDoList/>
+                            
                         </div>
                     </div>
-                  
+                  <ToDoList/>
                 </div>
             </div>
             
